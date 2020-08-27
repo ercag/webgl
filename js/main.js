@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let panels = gsap.utils.toArray(".panel");
-const sound8bit = PIXI.sound.Sound.from('music/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3');
+const sound8bit = PIXI.sound.Sound.from('webgl/music/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3');
 sound8bit.volume = 0.25;
 panels.forEach((panel, i) => {
     let id = panel.getAttribute("id");
@@ -39,7 +39,7 @@ document.getElementById("panel-welcome").appendChild(app.view);
 // document.body.appendChild(app.view);
 
 // Get the texture for rope.
-const starTexture = PIXI.Texture.from('img/star.png');
+const starTexture = PIXI.Texture.from('webgl/img/star.png');
 
 const starAmount = 1000;
 let cameraZ = 0;
@@ -123,7 +123,7 @@ const style = new PIXI.TextStyle({
 });
 
 
-const richText = new PIXI.Text('Hello my name is Erçağ', style);
+const richText = new PIXI.Text('Hello my name is Ercag', style);
 richText.x = -100;
 richText.y = -100;
 
@@ -196,7 +196,7 @@ let goRight;
 let goLeft;
 
 PIXI.loader
-    .add("walkedme", "img/sprite/texture.json")
+    .add("walkedme", "webgl/img/sprite/texture.json")
     .load(setup);
 
 function setup(loader, res) {
