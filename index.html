@@ -1,7 +1,64 @@
-<html>
-<head>
-</head>
-<body>
-<h1>Test...</h1>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/gsap.min.js"></script>
+        <script src="js/ScrollTrigger.min.js"></script>
+        <script src="js/pixi.js"></script>
+        <script src="js/pixi-spine.js"></script>
+        <script src="js/pixi-sound.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="description panel black" id="panel-welcome">
+            <div>
+                <div class="perspective">
+                    <div class="crawl">
+                        <p>Episode IV
+                            <strong>A NEW HOPE</strong>
+                        </p>
+                        <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
+                        <p>During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
+                        <p>Pursued by the Empire’s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="wallpaper" class="panel wallpaper align-top">
+            <!-- <p id="gray-content">
+                <code>start: "top top"</code>
+                triggers when the orange element's
+                <strong>top edge</strong>
+                hits the
+                <strong>top</strong>
+                of the viewport.
+                <code>end:&nbsp;"bottom&nbsp;150px"</code>
+                stops pinning when the
+                <strong>bottom</strong>
+                of the orange element hits
+                <strong>150px</strong>
+                down from the top of the viewport (measurements are relative to the top).
+            </p> -->
+            <div id="walking-man">
+            </div>
+        </section>
+        <section id="red" class="panel red align-top">
+            <p id="red-content">
+                <code>start: "top center"</code>
+                pins this element when the
+                <strong>top</strong>
+                of the red element hits the
+                <strong>center</strong>
+                of the viewport, and remains pinned for 200px because its
+                <code>end</code>
+                is defined as
+                <code>"+=200"</code>
+            </p>
+        </section>
+        <section class="panel purple">
+            Easy Peasy!
+        </section>
+        <script src="js/main.js"></script>
+    </body>
 </html>
